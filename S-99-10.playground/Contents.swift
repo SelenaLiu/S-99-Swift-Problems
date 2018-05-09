@@ -36,12 +36,8 @@ func encode(list: [Any]) -> [Any] {
     var finalList: [Any] = []
     
     for array in packedList! {
-        if array.count > 1 {
-            let pair = [array.count, array[0]]
-            finalList.append(pair)
-        } else {
-            finalList.append(array[0])
-        }
+        let pair = [array.count, array[0]]
+        finalList.append(pair)
     }
     
     return finalList
