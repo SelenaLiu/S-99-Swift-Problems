@@ -47,4 +47,4 @@ func encodeModified(list: [Any]) -> [Any] {
     return finalList
 }
 
-encode(list: myList)
+encodeModified(list: myList)
